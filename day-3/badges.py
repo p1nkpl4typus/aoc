@@ -19,10 +19,10 @@ n = 3
 
 elves = [rucksacks[i * n:(i + 1) * n] for i in range((len(rucksacks) + n - 1 ) // n )]
 
-for group in elves:
-    c1 = group[0]
-    c2 = group[1]
-    c3 = group[2]
+for elf in elves:
+    c1 = elf[0]
+    c2 = elf[1]
+    c3 = elf[2]
     results = item_checker(c1, c2, c3)
     v = priority[results]
     badges.append(v)
